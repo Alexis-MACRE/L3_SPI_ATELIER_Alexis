@@ -27,6 +27,7 @@ def racine_double(a:float,b:float,delta:float,num:int)->float:
 def str_equation(a:float,b:float,c:float)->str:
     """Cette fonction permet d'ecrire une chaine de caracteres contenant une equation de second degre
     a partir de 3 nombres reels """
+    # Review: Il manque les tests pour ne pas afficher les coeff qui valent 0 ainsie que les signes + lorsque les coeffs < 0
     equation="%.2fx2+%.2fx+%.2f=0" % (a,b,c)
     return equation
 
