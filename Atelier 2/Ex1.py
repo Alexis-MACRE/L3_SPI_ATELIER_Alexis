@@ -23,6 +23,7 @@ def message_imc(imc:float)->str:
 
 def test(fonction:callable,valeurs:list)->None:
     """Cette fonction permet de tester le correcte fonctionnement de la fonction message_imc"""
+    # Review: A quoi sert cette constante?
     TEST=[16,18,20,27,32,38,42]
     for i in range(0,len(valeurs)):
         print(fonction(valeurs[i]))
