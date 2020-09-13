@@ -6,7 +6,7 @@
 def facture_photocopie() :
      """Cette fonction permet de calculer la facture en fonction du nombre de photocopie rentrée"""
      nbr_copie = int(input("Veillez saisir le nombre de copies :"))
-     if(nbr_copie<=10) :
+     if(nbr_copie<=10) : #vous auriez toujours pu mettre des coonstantes
           prix_total = nbr_copie * 0.1
 
      elif(nbr_copie<=30) :
@@ -18,7 +18,7 @@ def facture_photocopie() :
      return prix_total
      
 
-facture = facture_photocopie()
+facture = facture_photocopie() #vous auriez pu faire une fonction de test
 
 print("Prix total :",round(facture,2)," €")
 
