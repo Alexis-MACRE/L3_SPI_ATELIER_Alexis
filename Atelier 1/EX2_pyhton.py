@@ -4,7 +4,7 @@
 #Description : Atelier de programmation Exo 2 Python
 
 def reconnaissance_caractere():
-     """Cette fonction permet de reconnaître quel type de caractère le caractère saisi est grâce à son code ASCII"""
+     """Cette fonction permet de reconnaître quel type de caractère le caractère saisi est grâce à son code ASCII""" #bah du coup c'est pas grâce à son code ascii là
      cara = input("Saisir le caractere : ")
      if(cara >= '0' and cara <= '9') :
           print("C'est un chiffre")
