@@ -52,7 +52,7 @@ def equation(a:float,b:float,c:float)->None:
     print(solution_equation(a,b,c))
 
 def test()->None:
-    """Cette fonction permet de tester le correcte fonctionnement de la fonction message_imc"""
+    """Cette fonction permet de tester le correcte fonctionnement de la fonction message_imc""" #message imc ?
     a=float(input("Saisir premier coeff:"))
     b=float(input("Saisir deuxieme coeff:"))
     c=float(input("Saisir troixieme coeff:"))
