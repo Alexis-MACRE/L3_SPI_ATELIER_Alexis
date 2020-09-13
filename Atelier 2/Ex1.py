@@ -3,6 +3,7 @@
 #Version: 1.0
 #Description: Atelier de programmation 2 L3 SPI Info
 
+#review jo: remplacer les nombres par des constantes 
 def message_imc(imc:float)->str:
     """cette fonction interprete le IMC"""
     if imc<16.5:
