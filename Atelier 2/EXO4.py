@@ -47,8 +47,11 @@ def saisie_date_naissance() -> date :
 
      return date(annee,mois,jour)    
 
-def age(date_naissance:date)->int :
+def age(date_naissance:date)->int : 
      age = (date_naissance.today() - date_naissance).days / 365.25
+     # age = today.year - naissance.year
+     # if naissance.month <= today.month and naissance.day < today.day
+     # age -= 1 
      
      return int(age)
 
