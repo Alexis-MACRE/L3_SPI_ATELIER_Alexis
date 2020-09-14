@@ -13,11 +13,10 @@ def date_est_valide(jour:int,mois:int,annee:int) -> bool :
      """Verifie si la date entree est valide"""
      MOIS_31_JOURS=[1,3,5,7,8,10,12] 
 
-     for i in range(0,len(MOIS_31_JOURS)):
-          if mois==MOIS_31_JOURS[i]:
-               jour_max = 31
+     if mois in MOIS_31_JOURS:
+          jour_max = 31
 
-     if (jour_max!=31 and mois!=2):
+     elif mois!=2:
           jour_max = 30
 
      elif est_bissextile(annee):
@@ -56,6 +55,7 @@ def age(date_naissance:date)->int :
      return int(age)
 
 def est_majeur(date_naissance:date)->bool :
+     #MAJORITE = 18
      return ((date_naissance.today().year - date_naissance.year) > 18)
 
 def test_acces() :
