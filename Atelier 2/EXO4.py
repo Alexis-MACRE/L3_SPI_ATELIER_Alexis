@@ -12,7 +12,6 @@ def est_bissextile(annee:int) -> bool :
 def date_est_valide(jour:int,mois:int,annee:int) -> bool :
      """Verifie si la date entree est valide"""
      MOIS_31_JOURS=[1,3,5,7,8,10,12] 
-     jour_max = 0
 
      for i in range(0,len(MOIS_31_JOURS)):
           if mois==MOIS_31_JOURS[i]:
@@ -27,25 +26,29 @@ def date_est_valide(jour:int,mois:int,annee:int) -> bool :
      else :
           jour_max = 28
 
-     return (1<=jour<=jour_max and 1<=mois<=12 and 1900<annee<2100)
+     return (1<=jour<=jour_max and 1<=mois<=12)
 
 def saisie_date_naissance() -> date :
      """Fonction de saisie de la date de naissance"""
-     annee=0
-     mois=0
-     jour=0
-     while(not date_est_valide(jour,mois,annee)):
+     input_valide = False
+
+     while(input_valide):
           print("------------------")
           print("Date de Naissance:")
           print("------------------")
           jour = int(input("Jour de naissance: "))
           mois = int(input("Mois de naissance: "))
-          annee = int(input("Annee de naissance: "))         
+          annee = int(input("Annee de naissance: "))
+
+          if not date_est_valide(jour,mois,annee):
+               print("\n Veillez rentrer une date valide\n")
+          else:
+               input_valide = True      
 
      return date(annee,mois,jour)    
 
 def age(date_naissance:date)->int :
-     age = (date_naissance.today() - date_naissance).days / 365
+     age = (date_naissance.today() - date_naissance).days / 365.25
      
      return int(age)
 
