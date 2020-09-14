@@ -1,5 +1,5 @@
 
-#Auteur: Ezzaatari Zakaria
+#Auteur: Ezzaatari Zakaria & Alexis Macre
 #Date: 07/09/2020
 #Version: 1.0
 #Description: Atelier de programmation 1 L3 SPI Info

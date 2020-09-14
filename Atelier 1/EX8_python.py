@@ -1,4 +1,4 @@
-#Auteur : Alexis MACRE
+#Auteur : Ezzaatari Zakaria & Alexis Macre
 #Date : 09/09/2020
 #Version : 1.0
 #Description : Atelier de programmation Exo 8 Python
