@@ -19,5 +19,10 @@
 		"prefix": ["doc"],
 		"body": ["\"\"\"Description\n\nArguments:\nargument1 -- description\n\nRetourne\n\"\"\""],
 		"description": "la docstring"
+	   },
+	"en-tête": {
+		"prefix": ["en-tete"],
+		"body": ["# Auteur(s) : \n# Date : xx/xx/2020\n# Version : 1.0\n# Description : Atelier de programmation x Exo x Python"],
+		"description": "en-tête de fichier"
 	   }
 }
