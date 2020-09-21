@@ -1,7 +1,7 @@
-# Auteur(s) : 
-# Date : xx/xx/2020
+# Auteur(s) : Macre Alexis & Ezzaatari Zakaria
+# Date : 16/09/2020
 # Version : 1.0
-# Description : Atelier de programmation x Exo x Python
+# Description : Atelier de programmation 3 Exo 5 Python
 
 def present(L:list,e:int)->bool:
      """Retourne True ou False si e est dans la liste L ou non"""
